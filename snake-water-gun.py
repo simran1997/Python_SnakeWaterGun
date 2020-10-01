@@ -1,7 +1,7 @@
 import random
 lst = ['s','w','g']
 
-chance = 10
+chance = int(input("How many turns would you like to play?"))
 no_of_chance = 0
 computer_point = 0
 human_point = 0
@@ -64,13 +64,13 @@ while no_of_chance < chance:
     no_of_chance = no_of_chance + 1
     print(f"{chance - no_of_chance} is left out of {chance} \n")
 
-print("Game over")
+print("Game Over")
 
 if computer_point > human_point:
-    print("Computer wins and you loose")
+    print("Computer Won and You loose")
 
 if computer_point < human_point:
-    print("you win and computer loose")
+    print("you Won and Computer loose")
 
 print(f"your point is {human_point} and computer point is {computer_point}")
 
